@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune!</title>
+    <script src="./js/randomWord.js"></script>
+    <script src="./js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="myCSS.css">
+</head>
+<body onload="return start()">
+    <div>
+        <div id = 'usedLetters' class="d-flex justify-content-center p-3 mb-2 bg-warning text-dark">
+
+        </div>
+        <form id='letters' class="col-xs-1 text-center p-3 mb-2 bg-secondary text-white" onsubmit="submitLetters(); return false">
+            <br><p>3 consonants</p>
+            <input type="text" required maxlength="1" id="cons1">
+            <input type="text" required maxlength="1" id="cons2">
+            <input type="text" required maxlength="1" id="cons3"><br>
+            <p>1 vowel</p>
+            <input type="text" required maxlength="1" id='vowel'><br>
+            <input type="submit"><br><br><br>
+        </form>
+    </div>
+    <div id='answer' class="d-flex justify-content-center p-3 mb-2 bg-danger text-white">
+        <p id='answerDisplay' ></p>
+    </div>
+    <div id='wordguess' class="d-flex justify-content-center p-3 mb-2 bg-primary text-white">
+        <form id = 'guessedWord' onsubmit="guessWord(); return false">
+            <p>Guess Word</p>
+            <input type="text" required id="guess">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

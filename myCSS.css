@@ -1,0 +1,10 @@
+.letterSelect{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#letters{
+    height: 500px;
+    width: 750px;
+}
