@@ -111,5 +111,14 @@ function submitLetters(){
     fillWord(letters)
 }
 
-
 //letterInput.addEventListener("submit",submitLetters)
+
+//10 second countdown
+// let timeleft = 10;
+// function setInterval(){
+//   if(timeleft <= 0){
+//     clearInterval(downloadTimer);
+//   }
+//   document.getElementById("progressBar").value = 10 - timeleft;
+//   timeleft -= 1;
+// };
